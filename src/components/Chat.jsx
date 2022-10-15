@@ -1,4 +1,5 @@
 import React,{useState, useEffect, useRef} from 'react';
+import SendMessage from './SendMessage';
 import Message from './Message';
 import {query, collection, orderBy , onSnapshot} from "firebase/firestore";
 import {db} from "../firebase"
@@ -33,7 +34,7 @@ const Chat = () => {
             ))}
 
         </main>
-
+        <SendMessage scroll={scroll} />
         <span ref={scroll}></span>
     </>
   )
