@@ -5,7 +5,7 @@ import {query, collection, orderBy , onSnapshot} from "firebase/firestore";
 import {db} from "../firebase"
 
 const style = {
-    main:  `flex flex-col p-[10px] relative`
+    main:  `flex flex-col p-[10px] relative overflow-auto mb-[50px] `
 }
 
 const Chat = () => {
@@ -20,22 +20,23 @@ const Chat = () => {
             querySnapshot.forEach((doc) => {
                 messages.push({...doc.data(), id:doc.id})
             })
-            setMessages(messages)
+            setMessages(messages)    
         })
+        scroll.current?.scrollIntoView({ behavior: "smooth"});
+
         return () => unsubscribed();
     }, []);
+
 
   return (
     <>
         <main className={style.main}>
-
             {messages && messages.map((message) => (
                 <Message key={message.id} message={message} />
-            ))}
-
+                ))}
+        <span  ref={scroll}></span>
         </main>
         <SendMessage scroll={scroll} />
-        <span ref={scroll}></span>
     </>
   )
 }
