@@ -18,7 +18,7 @@ Chat en tiempo real utilizando Firebase como base de datos para almacenar los us
 
 ![Nombre](https://i.ibb.co/PcLh8d0/Screenshot-2.png "Chat")
 
-![Nombre](https://i.ibb.co/4VML4Q5/Screenshot-3.png "Chat")
+![Nombre](https://i.ibb.co/Nyd89Lv/Screenshot-4.png "Chat")
 
 
 
