@@ -1,4 +1,4 @@
-# Chat App - Coderhouse
+# Chat App 
 
 ![Chat App](https://i.ibb.co/Ykh7VwJ/Screenshot-1.png "Chat App")
 
